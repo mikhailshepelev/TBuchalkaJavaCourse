@@ -1,5 +1,7 @@
 package encapsulation;
 
+import encapsulation_exercise.Printer;
+
 public class Main {
     public static void main(String[] args) {
         Player player = new Player();
@@ -21,7 +23,7 @@ public class Main {
         System.out.println("Initial health is " + enhancedPlayer.getHealth());
 
 
-        Printer printer = new Printer(50, false);
+        Printer printer = new Printer(50, true);
         System.out.println("initial page count = " + printer.getPagesPrinted());
         int pagesPrinted = printer.printPages(4);
         System.out.println("Pages printed was " + pagesPrinted + " new total print count for printer = " + printer.getPagesPrinted());

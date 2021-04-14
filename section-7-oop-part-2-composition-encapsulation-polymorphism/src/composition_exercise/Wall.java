@@ -1,4 +1,4 @@
-package composition;
+package composition_exercise;
 
 public class Wall {
     private String direction;

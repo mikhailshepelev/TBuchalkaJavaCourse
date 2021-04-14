@@ -1,4 +1,4 @@
-package encapsulation;
+package encapsulation_exercise;
 
 public class Printer {
     private int tonerLevel;
@@ -17,7 +17,7 @@ public class Printer {
     }
 
     public int addToner(int tonerAmount) {
-        if (tonerLevel > 0 && tonerAmount <= 100) {
+        if (tonerAmount > 0 && tonerAmount <= 100) {
             if (this.tonerLevel + tonerAmount > 100) {
                 return -1;
             }
@@ -31,8 +31,7 @@ public class Printer {
     public int printPages(int pages) {
         int pagesToPrint = pages;
         if (this.duplex) {
-            pagesToPrint /= 2;
-            System.out.println("Printing in duplex mode");
+            pagesToPrint = (pages % 2 == 0) ? pages / 2 : (pages / 2) + 1;
         }
         this.pagesPrinted += pagesToPrint;
         return pagesToPrint;

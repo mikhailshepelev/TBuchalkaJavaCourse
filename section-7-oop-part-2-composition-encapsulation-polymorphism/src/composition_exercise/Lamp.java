@@ -1,4 +1,4 @@
-package composition;
+package composition_exercise;
 
 public class Lamp {
     private String style;
@@ -11,10 +11,6 @@ public class Lamp {
         this.globRating = globRating;
     }
 
-    public void turnOn() {
-        System.out.println("Lamp -> Turning on");
-    }
-
     public String getStyle() {
         return style;
     }
@@ -25,5 +21,9 @@ public class Lamp {
 
     public int getGlobRating() {
         return globRating;
+    }
+
+    public void turnOn() {
+        System.out.println("Lamp -> Turning on");
     }
 }

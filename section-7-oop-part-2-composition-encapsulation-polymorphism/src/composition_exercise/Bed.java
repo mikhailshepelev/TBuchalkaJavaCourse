@@ -1,4 +1,4 @@
-package composition;
+package composition_exercise;
 
 public class Bed {
     private String style;
@@ -13,10 +13,6 @@ public class Bed {
         this.height = height;
         this.sheets = sheets;
         this.quilt = quilt;
-    }
-
-    public void make() {
-        System.out.println("Bed -> Making");
     }
 
     public String getStyle() {
@@ -37,5 +33,9 @@ public class Bed {
 
     public int getQuilt() {
         return quilt;
+    }
+
+    public void make() {
+        System.out.println("Bed -> Making | ");
     }
 }

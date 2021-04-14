@@ -1,4 +1,4 @@
-package composition;
+package composition_exercise;
 
 public class Bedroom {
     private String name;
@@ -26,7 +26,7 @@ public class Bedroom {
     }
 
     public void makeBed() {
-        System.out.println("Bedroom -> Making bed");
-        bed.make();
+        System.out.println("Bedroom -> Making bed | ");
+        this.bed.make();
     }
 }
